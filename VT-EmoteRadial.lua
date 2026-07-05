@@ -140,7 +140,7 @@ end)
 
 if #emotesList == 0 then
 	local success, result = pcall(function()
-		local jsonContent = game:HttpGet("https://raw.githubusercontent.com/VitooEU/Emotes/refs/heads/main/All_Emotes.json")
+		local jsonContent = game:HttpGet("https://raw.githubusercontent.com/VitooEU/VitoMenu/refs/heads/main/All_Emotes.json")
 		if jsonContent and jsonContent ~= "" then
 			return HttpService:JSONDecode(jsonContent)
 		end
